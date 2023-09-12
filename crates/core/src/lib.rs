@@ -53,7 +53,7 @@ pub use self::handler::Handler;
 pub use self::http::{Request, Response};
 pub use self::routing::{FlowCtrl, Router};
 pub use self::server::Server;
-pub use self::service::Service;
+pub use self::service::{HyperHandler, Service};
 pub use self::writing::{Scribe, Writer};
 /// Result type which has `salvo::Error` as it's error type.
 pub type Result<T> = std::result::Result<T, Error>;
