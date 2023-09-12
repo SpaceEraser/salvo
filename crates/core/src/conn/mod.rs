@@ -58,6 +58,12 @@ pub use tcp::TcpListener;
 mod joined;
 pub use joined::JoinedListener;
 
+mod timeout;
+pub use timeout::TimeoutAcceptor;
+
+mod either;
+pub use either::{EitherAcceptor, EitherListener, EitherStream};
+
 mod proto;
 pub use proto::HttpBuilder;
 
