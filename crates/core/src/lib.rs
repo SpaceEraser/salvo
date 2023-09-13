@@ -89,9 +89,7 @@ pub mod prelude {
         #![unix]
         pub use crate::conn::UnixListener;
     }
-    pub use crate::conn::{
-        EitherAcceptor, EitherListener, EitherStream, JoinedListener, Listener, TcpListener, TimeoutAcceptor,
-    };
+    pub use crate::conn::{JoinedListener, Listener, TcpListener};
     pub use crate::handler::{self, Handler};
     pub use crate::routing::{FlowCtrl, Router};
     pub use crate::server::Server;
